@@ -1,0 +1,10 @@
+# Python cruft
+.ipynb_checkpoints
+__pycache__
+venv
+
+# Mac cruft
+.DS_Store
+
+# vim cruft
+.*.swp

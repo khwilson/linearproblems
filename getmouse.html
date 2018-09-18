@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Grab points</title>
+    <style>
+      #outputText {
+        height: 200px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body onload="init();">
+    <img src="badtrend.jpg" id="theImage">
+    <textarea rows="20" cols="50" id="outputText"></textarea>
+    <script>
+      var justInited = true
+
+      /**
+       * Get the position of `el` relative to the document.
+       * Ganked from https://plainjs.com/javascript/styles/get-the-position-of-an-element-relative-to-the-document-24/
+       */
+      function offset(el) {
+        let rect = el.getBoundingClientRect()
+        let scrollLeft = window.pageXOffset || document.documentElement.scrollLeft
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop
+        return {
+          top: rect.top + scrollTop,
+          left: rect.left + scrollLeft
+        }
+      }
+
+      /**
+       * Get x/y of mouse event relative to element
+       */
+      function position(el, e) {
+        let rel = offset(el)
+        return {
+          top: e.pageY - rel.top,
+          left: e.pageX - rel.left
+        }
+      }
+
+      function init() {
+        let img = document.getElementById('theImage')
+        let text = document.getElementById('outputText')
+        img.addEventListener('click', function (e) {
+          let v = text.value
+          v += ''
+          if (justInited) {
+            justInited = false
+          } else {
+            v += '\n'
+          }
+          let pos = position(img, e)
+          v += pos.left + ' ' + pos.top
+          text.value = v
+        })
+      }
+    </script>
+  </body>
+</html>
