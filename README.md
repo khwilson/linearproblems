@@ -11,10 +11,11 @@ which contained the following chart that I found immensely disingenuous:
 
 My tweet thread explaining why you should really take this chart with a grain of
 salt is [here](https://twitter.com/khayeswilson/status/1042044243706097666), but the summary is thus:
-#. be suspicious of extrapolation
-#. before extrapolation, the true data should be randomly scattered above and below the trend line
-#. don’t trust charts without error bars
-#. always ask “why did you choose that smoother.”
+
+1. be suspicious of extrapolation
+2. before extrapolation, the true data should be randomly scattered above and below the trend line
+3. don’t trust charts without error bars
+4. always ask “why did you choose that smoother.”
 
 ## Want to do the other charts?
 
