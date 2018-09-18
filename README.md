@@ -10,7 +10,7 @@ which contained the following chart that I found immensely disingenuous:
 ![Chart in question](https://raw.githubusercontent.com/khwilson/linearproblems/master/badtrend.jpg)
 
 My tweet thread explaining why you should really take this chart with a grain of
-salt is [here](???), but the summary is thus:
+salt is [here](https://twitter.com/khayeswilson/status/1042044243706097666), but the summary is thus:
 #. be suspicious of extrapolation
 #. before extrapolation, the true data should be randomly scattered above and below the trend line
 #. don’t trust charts without error bars
